@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BackendWorkshopo.iml" filepath="$PROJECT_DIR$/.idea/BackendWorkshopo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../EgypetTalent/.idea/EgypetTalent.iml" filepath="$PROJECT_DIR$/../../EgypetTalent/.idea/EgypetTalent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../bluepen/.idea/bluepen.iml" filepath="$PROJECT_DIR$/../../bluepen/.idea/bluepen.iml" />
     </modules>
   </component>
 </project>

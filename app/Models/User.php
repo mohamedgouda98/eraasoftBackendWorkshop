@@ -12,6 +12,13 @@ class User extends Authenticatable implements JWTSubject
 {
     use HasFactory, Notifiable;
 
+
+    public function roleName(){
+        return $this->belongsTo(role::class, 'role_id', 'id');
+    }
+
+
+
     // Rest omitted for brevity
 
     /**

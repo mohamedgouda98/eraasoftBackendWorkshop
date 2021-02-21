@@ -15,12 +15,16 @@
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Events/roomMessages.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Controllers/Api/AdminController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Controllers/Api/EnduserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Controllers/Api/ExamController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Controllers/Api/chatController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Interfaces/AdminInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Interfaces/ExamInterface.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Interfaces/chatRepositoryInterface.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Repositories/AdminRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Repositories/ExamRepository.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Repositories/chatRepository.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../EgypetTalent/app/Http/Traits/ShiftTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../EgypetTalent/database/migrations/2021_02_17_210021_create_exam_types_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../albakhurj/public/css/app.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../albakhurj/public/css/fontawesome-all.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../albakhurj/public/css/fullcalender.css" afterDir="false" />
@@ -33,65 +37,35 @@
       <change afterPath="$PROJECT_DIR$/../../albakhurj/public/js/fullCalendar-ar.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../albakhurj/public/js/fullcalender.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../albakhurj/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/ScheduleMangerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/SubjectsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/UserRoleTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Interfaces/SubjectRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Interfaces/scheduleMangerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Middleware/Roles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Repositories/SubjectRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Repositories/scheduleMangerRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/school_info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/subject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/app/teacher_subject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_10_27_204004_add_creation_id_to_schools.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_11_04_121420_create_school_infos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_12_16_081134_create_subjects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_12_27_164645_add_has_weekly_plan_to_subjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_12_28_120112_create_teacher_subjects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Traits/ApiDesignTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/.idea/bluepen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/.idea/bluepen.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/SchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/SchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/ApiResponseTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/ApiResponseTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/authTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/authTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/profileTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/profileTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/schoolTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/schoolTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/tokenTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Controllers/api/Traits/tokenTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Interfaces/schoolRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Interfaces/schoolRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Http/Repositories/schoolRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Http/Repositories/schoolRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/Providers/repositoryServicesProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/Providers/repositoryServicesProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/school.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/school.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/school_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/school_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/school_stages.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/school_stages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/staff_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/staff_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/staff_role.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/staff_role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/stages_gardes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/stages_gardes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/app/student_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/app/student_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/config/jwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/config/jwt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_07_04_000000_create_schools_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_07_04_000000_create_schools_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_08_07_200343_add_active_to_schools.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_08_07_200343_add_active_to_schools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_08_08_104609_add_user_id_at_school.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_08_08_104609_add_user_id_at_school.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_10_14_151804_create_student_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/database/migrations/2020_10_14_151804_create_student_profiles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bluepen/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../bluepen/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StaffController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Interfaces/AuthInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Interfaces/StaffInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/AuthRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/StaffRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BackendWorkshopo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BackendWorkshopo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../bluepen" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -219,8 +193,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/app/Http/Repositories" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -237,6 +219,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613500304557</updated>
       <workItem from="1613500306302" duration="8947000" />
+      <workItem from="1613725481305" duration="5178000" />
     </task>
     <servers />
   </component>
@@ -253,5 +236,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="439" y="89" key="#com.intellij.ide.util.MemberChooser" timestamp="1613738586124">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="439" y="89" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1613738586124" />
+    <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613725990152">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1613725990151" />
+    <state x="367" y="141" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1613739829604">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="367" y="141" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1280.800@0.0.1280.800" timestamp="1613739829604" />
   </component>
 </project>

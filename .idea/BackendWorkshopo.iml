@@ -122,7 +122,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="EgypetTalent" />
-    <orderEntry type="module" module-name="bluepen" />
   </component>
 </module>
